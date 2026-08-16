@@ -1,0 +1,401 @@
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  :root {
+    --pad: 18px;
+    --gap: 10px;
+  }
+
+  .top-banner {
+    height: 34px;
+  }
+
+  .banner-track span {
+    padding-right: 32px;
+    font-size: 0.61rem;
+    letter-spacing: 0.11em;
+  }
+
+  .site-header {
+    padding:
+      max(17px, env(safe-area-inset-top))
+      var(--pad)
+      17px;
+  }
+
+  .brand {
+    max-width: calc(100% - 50px);
+    font-size: clamp(1.05rem, 4.8vw, 1.45rem);
+    line-height: 1;
+    letter-spacing: -0.035em;
+    white-space: nowrap;
+  }
+
+  .menu-toggle {
+    width: 32px;
+    height: 26px;
+    flex-basis: 32px;
+  }
+
+  .menu-toggle span:nth-child(1) {
+    top: 2px;
+  }
+
+  .menu-toggle span:nth-child(2) {
+    top: 12px;
+  }
+
+  .menu-toggle span:nth-child(3) {
+    top: 22px;
+  }
+
+  .menu-open .menu-toggle span:nth-child(1),
+  .menu-open .menu-toggle span:nth-child(3) {
+    top: 12px;
+  }
+
+  .menu a {
+    font-size: clamp(2.7rem, 13vw, 4.4rem);
+    line-height: 0.94;
+    letter-spacing: -0.06em;
+  }
+
+  .hero {
+    min-height: 26vh;
+  }
+
+  .hero-banner {
+    height: 86dvh;
+    min-height: 500px;
+    max-height: 780px;
+  }
+
+  .hero-banner__image {
+    transform: none;
+  }
+
+  .hero-banner:hover .hero-banner__image {
+    transform: none;
+  }
+
+  .hero-banner__content {
+    bottom: max(24px, env(safe-area-inset-bottom));
+  }
+
+  .hero-banner__eyebrow {
+    margin-bottom: 11px;
+    font-size: 0.61rem;
+  }
+
+  .hero-banner h1 {
+    font-size: clamp(2.7rem, 13vw, 4.35rem);
+    line-height: 0.87;
+    letter-spacing: -0.07em;
+  }
+
+  .hero-banner__link {
+    margin-top: 22px;
+    font-size: 0.78rem;
+  }
+
+  .work-section {
+    padding-bottom: 88px;
+  }
+
+  .section-heading {
+    margin-bottom: 32px;
+  }
+
+  .section-heading h1 {
+    font-size: clamp(2.95rem, 14vw, 4.7rem);
+    line-height: 0.87;
+  }
+
+  .project-grid {
+    gap: 12px;
+  }
+
+  .project-card {
+    aspect-ratio: 1.15 / 1;
+  }
+
+  .project-overlay {
+    padding: 16px;
+    grid-template-columns: 1fr;
+    align-items: end;
+    gap: 7px;
+  }
+
+  .project-overlay h2 {
+    font-size: clamp(1.8rem, 8.8vw, 2.8rem);
+    line-height: 0.95;
+  }
+
+  .project-overlay p {
+    margin-top: 7px;
+    font-size: 0.69rem;
+    line-height: 1.35;
+  }
+
+  .project-overlay > span {
+    display: none;
+  }
+
+  .contact-section {
+    padding: 74px var(--pad);
+    gap: 58px;
+  }
+
+  .contact-small {
+    margin-bottom: 18px;
+  }
+
+  .contact-info h3 {
+    max-width: 100%;
+    font-size: clamp(2.65rem, 12vw, 4rem);
+    line-height: 0.97;
+  }
+
+  .contact-info p {
+    margin-top: 24px;
+    font-size: 0.94rem;
+    line-height: 1.6;
+  }
+
+  .contact-info p + p {
+    margin-top: 13px;
+  }
+
+  .contact-mail {
+    max-width: 100%;
+    margin-top: 34px;
+    font-size: 0.94rem;
+    overflow-wrap: anywhere;
+  }
+
+  .contact-form-wrapper h2 {
+    margin-bottom: 36px;
+    font-size: clamp(2.45rem, 11vw, 3.4rem);
+  }
+
+  .contact-form {
+    gap: 21px;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 16px;
+  }
+
+  .form-group textarea {
+    min-height: 115px;
+  }
+
+  .contact-button {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .footer {
+    min-height: 44vh;
+    padding-top: 68px;
+    padding-bottom: max(28px, env(safe-area-inset-bottom));
+  }
+
+  .footer p {
+    margin-bottom: 46px;
+    font-size: clamp(2.65rem, 12.5vw, 4.35rem);
+    line-height: 0.9;
+  }
+
+  .whatsapp-float {
+    right: max(14px, env(safe-area-inset-right));
+    bottom: max(14px, env(safe-area-inset-bottom));
+
+    width: 52px;
+    height: 52px;
+    min-height: 52px;
+
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .whatsapp-float svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .whatsapp-float span {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  :root {
+    --pad: 16px;
+  }
+
+  .brand {
+    max-width: calc(100% - 47px);
+    font-size: clamp(0.98rem, 4.5vw, 1.18rem);
+  }
+
+  .menu a {
+    font-size: clamp(2.45rem, 12.8vw, 3.55rem);
+  }
+
+  .hero-banner {
+    min-height: 470px;
+  }
+
+  .hero-banner h1 {
+    font-size: clamp(2.45rem, 12.5vw, 3.7rem);
+  }
+
+  .section-heading h1 {
+    font-size: clamp(2.7rem, 13.5vw, 4.05rem);
+  }
+
+  .project-card {
+    aspect-ratio: 1 / 1;
+  }
+
+  .project-overlay h2 {
+    font-size: clamp(1.65rem, 8.5vw, 2.5rem);
+  }
+
+  .contact-info h3 {
+    font-size: clamp(2.45rem, 11.8vw, 3.55rem);
+  }
+
+  .contact-form-wrapper h2 {
+    font-size: clamp(2.35rem, 11vw, 3.1rem);
+  }
+
+  .footer p {
+    font-size: clamp(2.45rem, 11.8vw, 3.65rem);
+  }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+  :root {
+    --pad: 14px;
+  }
+
+  .brand {
+    max-width: calc(100% - 45px);
+    font-size: 0.92rem;
+  }
+
+  .menu-toggle {
+    width: 29px;
+    flex-basis: 29px;
+  }
+
+  .menu a {
+    font-size: 2.4rem;
+  }
+
+  .hero-banner h1 {
+    font-size: 2.4rem;
+  }
+
+  .section-heading h1 {
+    font-size: 2.65rem;
+  }
+
+  .project-overlay {
+    padding: 14px;
+  }
+
+  .contact-info h3 {
+    font-size: 2.4rem;
+  }
+}
+
+
+/* =========================================================
+   MOBILE LANDSCAPE / PANTALLAS BAJAS
+========================================================= */
+
+@media (max-height: 620px) and (orientation: landscape) {
+  .menu {
+    justify-content: flex-start;
+    padding-top: 74px;
+  }
+
+  .menu a {
+    font-size: clamp(2.2rem, 8vh, 3.6rem);
+    line-height: 0.92;
+  }
+
+  .hero-banner {
+    height: 100dvh;
+    min-height: 420px;
+  }
+
+  .hero-banner__content {
+    bottom: 22px;
+  }
+
+  .hero-banner h1 {
+    font-size: clamp(2.6rem, 12vh, 4.7rem);
+  }
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) {
+  .brand:hover,
+  .menu a:hover {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-banner:hover .hero-banner__image {
+    transform: none;
+  }
+
+  .project-card:hover img {
+    transform: scale(1.001);
+  }
+
+  .project-card:hover .project-overlay > span {
+    transform: none;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
