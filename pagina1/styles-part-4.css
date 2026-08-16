@@ -1,0 +1,293 @@
+/* =========================================================
+   NOTEBOOK / DESKTOP MEDIANO
+========================================================= */
+
+@media (max-width: 1440px) {
+  :root {
+    --pad: clamp(24px, 3.5vw, 52px);
+  }
+
+  .brand {
+    font-size: clamp(2.3rem, 4vw, 4.4rem);
+  }
+
+  .hero-banner h1,
+  .section-heading h1 {
+    font-size: clamp(4.4rem, 8.2vw, 8.5rem);
+  }
+
+  .contact-section {
+    gap: clamp(60px, 7vw, 100px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .site-header {
+    align-items: center;
+  }
+
+  .brand {
+    font-size: clamp(2rem, 4.1vw, 3.7rem);
+  }
+
+  .menu-toggle {
+    width: 42px;
+  }
+
+  .hero-banner {
+    min-height: 600px;
+  }
+
+  .section-heading h1 {
+    font-size: clamp(4rem, 8.8vw, 7.6rem);
+  }
+
+  .project-overlay h2 {
+    font-size: clamp(1.7rem, 2.8vw, 3.1rem);
+  }
+
+  .contact-section {
+    min-height: auto;
+  }
+
+  .contact-info h3 {
+    font-size: clamp(3.3rem, 5.5vw, 5.6rem);
+  }
+}
+
+
+/* =========================================================
+   TABLET LANDSCAPE / NOTEBOOK CHICA
+========================================================= */
+
+@media (max-width: 1024px) {
+  :root {
+    --pad: clamp(22px, 4vw, 38px);
+    --gap: 12px;
+  }
+
+  .site-header {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .brand {
+    max-width: calc(100% - 72px);
+    font-size: clamp(1.9rem, 4.5vw, 3rem);
+    line-height: 0.86;
+  }
+
+  .menu {
+    padding-top: 110px;
+    padding-bottom: 40px;
+    overflow-y: auto;
+  }
+
+  .menu a {
+    font-size: clamp(3.8rem, 9vw, 6.7rem);
+    line-height: 0.86;
+  }
+
+  .hero {
+    min-height: clamp(330px, 42vh, 500px);
+  }
+
+  .hero-banner {
+    height: 92dvh;
+    min-height: 560px;
+  }
+
+  .hero-banner h1 {
+    font-size: clamp(3.8rem, 9.5vw, 6.8rem);
+    line-height: 0.82;
+  }
+
+  .section-heading h1 {
+    font-size: clamp(3.8rem, 9.5vw, 6.8rem);
+  }
+
+  .project-card {
+    aspect-ratio: 1.6 / 1;
+  }
+
+  .project-overlay {
+    padding: clamp(18px, 2.5vw, 26px);
+    gap: 16px;
+  }
+
+  .contact-section {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 76px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .contact-form-wrapper,
+  .contact-info {
+    width: 100%;
+    max-width: 760px;
+  }
+
+  .contact-info {
+    order: -1;
+  }
+
+  .footer {
+    min-height: 56vh;
+  }
+}
+
+
+/* =========================================================
+   TABLET VERTICAL
+========================================================= */
+
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    aspect-ratio: 1.5 / 1;
+  }
+
+  .project-overlay h2 {
+    font-size: clamp(2.15rem, 5.8vw, 3.7rem);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --pad: clamp(18px, 4vw, 28px);
+  }
+
+  .site-header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .brand {
+    max-width: calc(100% - 62px);
+    font-size: clamp(1.45rem, 5.3vw, 2.35rem);
+    line-height: 0.92;
+    letter-spacing: -0.05em;
+  }
+
+  .menu-toggle {
+    width: 36px;
+    height: 29px;
+    flex: 0 0 36px;
+  }
+
+  .menu-toggle span:nth-child(1) {
+    top: 3px;
+  }
+
+  .menu-toggle span:nth-child(2) {
+    top: 13px;
+  }
+
+  .menu-toggle span:nth-child(3) {
+    top: 23px;
+  }
+
+  .menu-open .menu-toggle span:nth-child(1),
+  .menu-open .menu-toggle span:nth-child(3) {
+    top: 13px;
+  }
+
+  .menu {
+    justify-content: center;
+    padding:
+      max(92px, env(safe-area-inset-top))
+      var(--pad)
+      max(28px, env(safe-area-inset-bottom));
+  }
+
+  .menu a {
+    max-width: 100%;
+    font-size: clamp(3.1rem, 11vw, 5.2rem);
+    line-height: 0.9;
+  }
+
+  .hero {
+    min-height: 31vh;
+  }
+
+  .hero-banner {
+    height: 88dvh;
+    min-height: 520px;
+    max-height: 900px;
+  }
+
+  .hero-banner__content {
+    bottom: 30px;
+  }
+
+  .hero-banner__eyebrow {
+    margin-bottom: 14px;
+  }
+
+  .hero-banner h1 {
+    max-width: 100%;
+    font-size: clamp(3.15rem, 11vw, 5.3rem);
+    line-height: 0.84;
+  }
+
+  .hero-banner__link {
+    margin-top: 26px;
+  }
+
+  .work-section {
+    padding-bottom: 105px;
+  }
+
+  .section-heading {
+    margin-bottom: 42px;
+  }
+
+  .section-heading h1 {
+    font-size: clamp(3.3rem, 12vw, 5.5rem);
+    line-height: 0.84;
+  }
+
+  .project-card {
+    aspect-ratio: 1.38 / 1;
+  }
+
+  .project-overlay {
+    gap: 12px;
+  }
+
+  .project-overlay h2 {
+    max-width: 100%;
+    font-size: clamp(2rem, 7vw, 3.35rem);
+  }
+
+  .contact-section {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    gap: 64px;
+  }
+
+  .contact-info h3 {
+    font-size: clamp(3rem, 9.5vw, 4.8rem);
+  }
+
+  .contact-form-wrapper h2 {
+    margin-bottom: 44px;
+    font-size: clamp(2.7rem, 8.5vw, 3.8rem);
+  }
+
+  .footer {
+    min-height: 50vh;
+    padding-top: 76px;
+  }
+
+  .footer p {
+    font-size: clamp(3rem, 11vw, 5.1rem);
+    line-height: 0.86;
+  }
+}
+
